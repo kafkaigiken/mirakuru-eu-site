@@ -1,0 +1,13 @@
+# Jekyll build output and caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler / local gems
+vendor/
+.bundle/
+
+# GitHub Pages ignores Gemfile.lock (it builds with its own gem environment),
+# and the github-pages gem is self-updating, so we don't pin it here.
+Gemfile.lock

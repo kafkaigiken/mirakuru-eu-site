@@ -1,0 +1,21 @@
+# Site configuration for Mirakuru Europa OÜ (https://mirakuru.eu)
+# Built by GitHub Pages' native Jekyll build — keep this plugin-free so no CI is needed.
+
+title: "Mirakuru Europa OÜ"
+description: "Mirakuru Europa OÜ — software and product-development consulting, and the makers of PuchiDen."
+lang: "en"
+
+# Custom domain served from the repository root via the CNAME file.
+url: "https://mirakuru.eu"
+baseurl: ""
+
+# We use our own layouts in _layouts/ rather than a gem-based theme.
+
+# Files that are part of the toolchain, not the published site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CLAUDE.md
+  - vendor
+  - .bundle

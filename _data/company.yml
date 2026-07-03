@@ -1,0 +1,11 @@
+# Central place for the company's legal details, rendered in the site footer
+# (see _includes/footer.html). Edit values here — nowhere else.
+#
+# Registration number and VAT number are public company data and are legally
+# required to appear on the site. Do not add anything genuinely private here;
+# this repository is public.
+
+name: "Mirakuru Europa OÜ"
+address: "Sepapaja 6, Tallinn 15551, Estonia"
+registration_number: "14564077"
+vat_number: "EE102098839"

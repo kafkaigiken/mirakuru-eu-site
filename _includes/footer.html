@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="container">
+    {%- assign company = site.data.company -%}
+    <p class="company-name">{{ company.name }}</p>
+    <address class="company-legal">
+      {{ company.address }}<br>
+      Reg. no. {{ company.registration_number }} &middot; VAT {{ company.vat_number }}
+    </address>
+    <p class="copyright">&copy; {{ site.time | date: '%Y' }} {{ company.name }}</p>
+  </div>
+</footer>

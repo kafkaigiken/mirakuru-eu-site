@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Mirakuru Europa OÜ — site styles
+   Three regions, matching the page structure: .site-header / .site-content /
+   .site-footer. Design goals: calm, editorial, generous whitespace, no web
+   fonts (fast, dependency-free, works offline).
+   ========================================================================== */
+
+:root {
+  --ink: #17181d;          /* primary text */
+  --muted: #6b6f76;        /* secondary text, footer */
+  --accent: #4338ca;       /* links */
+  --accent-hover: #3730a3;
+  --line: #e6e7ea;         /* hairline borders */
+  --bg: #ffffff;
+  --bg-subtle: #f7f7f8;    /* footer */
+  --container: 46rem;      /* ~736px reading measure */
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.0625rem;    /* 17px */
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+/* Header ------------------------------------------------------------------ */
+.site-header {
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  padding-block: 1.5rem;
+}
+
+.brand {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.brand-wordmark {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Content ----------------------------------------------------------------- */
+.site-content {
+  flex: 1 0 auto;
+  padding-block: 4rem 5rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.55;
+  margin: 0 0 1rem;
+}
+
+.site-content h2 {
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.75rem;
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.site-content h3 {
+  font-size: 1.15rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.site-content p { margin: 0 0 1.1rem; }
+
+.site-content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.site-content a:hover,
+.site-content a:focus-visible {
+  color: var(--accent-hover);
+  border-bottom-color: currentColor;
+}
+
+/* Footer ------------------------------------------------------------------ */
+.site-footer {
+  flex-shrink: 0;
+  background: var(--bg-subtle);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.site-footer .container { padding-block: 2.5rem; }
+
+.site-footer .company-name {
+  margin: 0 0 0.25rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.site-footer .company-legal {
+  font-style: normal;   /* reset <address> italics */
+  margin: 0;
+}
+
+.site-footer .copyright {
+  margin: 1rem 0 0;
+}
+
+/* Utilities --------------------------------------------------------------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Small screens ----------------------------------------------------------- */
+@media (max-width: 32rem) {
+  .site-content { padding-block: 2.5rem 3.5rem; }
+  .lead { font-size: 1.15rem; }
+}
