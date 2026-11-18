@@ -35,6 +35,16 @@ with. Our work concentrates on a focused set of areas:
 - **Content &amp; SEO** — Evidence-based, data-driven content strategy, competitive analysis and SEO that
   connects what you publish to measurable business results.
 
+## Projects
+
+### PyCon US 2027 website
+
+We helped the [Python Software Foundation](https://www.python.org/psf-landing/) implement the design
+for the [PyCon US 2027](https://us.pycon.org/2027/) website, the home of the largest annual gathering
+of the Python community.
+
+[Visit us.pycon.org/2027 &rarr;](https://us.pycon.org/2027/)
+
 ## Products
 
 ### PuchiDen

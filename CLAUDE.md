@@ -16,8 +16,8 @@ The whole site is a single page assembled from three regions:
 - `_layouts/default.html` is the shell: it renders `{% include header.html %}`,
   then the page `{{ content }}` inside `<main class="site-content">`, then
   `{% include footer.html %}`.
-- `index.md` is the only content page (front matter → `layout: default`). Its two
-  `##` headings are the **Consulting** and **Products** sections.
+- `index.md` is the only content page (front matter → `layout: default`). Its three
+  `##` headings are the **Consulting**, **Projects** and **Products** sections.
 - `_data/company.yml` is the single source of truth for the company's legal
   details (name, address, registration number, VAT number). `_includes/footer.html`
   renders them via `site.data.company.*`. **Change these values only in

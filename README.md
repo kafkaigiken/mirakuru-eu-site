@@ -11,7 +11,7 @@ details.
 
 | Path | What it holds |
 | --- | --- |
-| `index.md` | The homepage content (the **Consulting** and **Products** sections). |
+| `index.md` | The homepage content (the **Consulting**, **Projects** and **Products** sections). |
 | `_data/company.yml` | Company legal details (name, address, registration number, VAT number) shown in the footer. **Edit these here — nowhere else.** |
 | `_includes/header.html` | The header / wordmark (swap for a logo later). |
 | `_includes/footer.html` | The footer, which renders `_data/company.yml`. |
@@ -96,6 +96,6 @@ is what the `CNAME` file provides).
 ## Editing common things
 
 - **Company address / registration / VAT number:** edit `_data/company.yml`.
-- **Page text (Consulting, Products):** edit `index.md`.
+- **Page text (Consulting, Projects, Products):** edit `index.md`.
 - **Look and feel:** edit `assets/css/style.css`.
 - **Replace the wordmark with a logo:** see the comment in `_includes/header.html`.
